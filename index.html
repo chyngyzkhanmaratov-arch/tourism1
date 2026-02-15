@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ky">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kyrgyzstan Tours — Professional Tourism Platform</title>
+    <meta
+      name="description"
+      content="Көп тилдүү туризм платформасы: тур пакеттер, онлайн брондоо, партнёр кабинети жана Кыргызстан боюнча сапарлар."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Arabic:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="home">
+      <nav class="topbar container">
+        <div class="logo">Kyrgyz<span>Tours</span></div>
+        <div class="controls">
+          <label for="lang-switch" class="sr-only">Language</label>
+          <select id="lang-switch" aria-label="Language switcher">
+            <option value="ky">KG</option>
+            <option value="en">EN</option>
+            <option value="ru">RU</option>
+            <option value="ar">AR</option>
+            <option value="tr">TR</option>
+            <option value="cn">CN</option>
+          </select>
+          <a class="btn ghost" href="#booking">Book now</a>
+        </div>
+      </nav>
+
+      <div class="hero-content container">
+        <p class="tag" data-i18n="tagline">Кыргызстанга кош келиңиз</p>
+        <h1 data-i18n="heroTitle">Чоң туризм системасы үчүн бышык платформа</h1>
+        <p data-i18n="heroText">
+          Тур пакет базасы, көп тил колдоо, онлайн брондоо жана агенттик кабинет — баары бир жерде.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="https://wa.me/996700000000" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn secondary" href="https://t.me/yourtouragency" target="_blank" rel="noopener">Telegram</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section container" id="why">
+        <h2 data-i18n="whyTitle">Эмне үчүн Кыргызстан?</h2>
+        <div class="grid grid-3">
+          <article class="card">
+            <h3 data-i18n="why1Title">Табият жана тоолор</h3>
+            <p data-i18n="why1Text">Ала-Тоо, Ысык-Көл, Сон-Көл сыяктуу дүйнөлүк деңгээлдеги уникалдуу багыттар.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="why2Title">Көчмөн маданият</h3>
+            <p data-i18n="why2Text">Боз үй, улуттук ашкана, этно-фестиваль жана жергиликтүү тажрыйба.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="why3Title">Ийкемдүү сапарлар</h3>
+            <p data-i18n="why3Text">Жеке, топтук, VIP жана комбо-тур форматтарын тез ыңгайлаштыруу.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="tours">
+        <div class="container">
+          <h2 data-i18n="tourTitle">Популярдуу тур пакеттер</h2>
+          <p class="section-intro" data-i18n="tourIntro">Ар бир турда маршрут, баа, камтылган кызматтар, сүрөт/видео жана FAQ бар.</p>
+          <div class="grid grid-2">
+            <article class="tour-card">
+              <h3>Issyk-Kul 3 Days</h3>
+              <p class="price">$320 / person</p>
+              <ul>
+                <li>Day 1: Bishkek → Burana → Cholpon-Ata</li>
+                <li>Day 2: Boat tour + Canyon</li>
+                <li>Day 3: Hot springs + return</li>
+              </ul>
+              <a href="#booking" class="text-link">Online booking →</a>
+            </article>
+            <article class="tour-card">
+              <h3>Alay – Sary-Mogol</h3>
+              <p class="price">$450 / person</p>
+              <ul>
+                <li>Mountain trekking & photo points</li>
+                <li>Guest house + meals included</li>
+                <li>4x4 transport and local guide</li>
+              </ul>
+              <a href="#booking" class="text-link">Online booking →</a>
+            </article>
+            <article class="tour-card">
+              <h3>Naryn – Son-Kol</h3>
+              <p class="price">$390 / person</p>
+              <ul>
+                <li>Horseback riding and yurt stay</li>
+                <li>National cuisine experience</li>
+                <li>Stargazing camp night</li>
+              </ul>
+              <a href="#booking" class="text-link">Online booking →</a>
+            </article>
+            <article class="tour-card">
+              <h3>Uzbekistan + Kyrgyzstan Combo</h3>
+              <p class="price">$980 / person</p>
+              <ul>
+                <li>Tashkent, Samarkand, Bishkek, Issyk-Kul</li>
+                <li>Cross-border support and documents</li>
+                <li>Hotel + transfer + multilingual guide</li>
+              </ul>
+              <a href="#booking" class="text-link">Online booking →</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="booking">
+        <h2 data-i18n="bookingTitle">Онлайн брондоо</h2>
+        <form class="booking-form" id="booking-form">
+          <input type="text" name="name" placeholder="Full name" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <select name="tour" required>
+            <option value="">Select tour</option>
+            <option>Issyk-Kul 3 days</option>
+            <option>Alay – Sary-Mogol</option>
+            <option>Naryn – Son-Kol</option>
+            <option>Uzbekistan + Kyrgyzstan Combo</option>
+          </select>
+          <input type="date" name="date" required />
+          <button class="btn" type="submit" data-i18n="bookBtn">Book tour</button>
+        </form>
+        <p id="form-message" class="form-message" aria-live="polite"></p>
+      </section>
+
+      <section class="section section-soft" id="partners">
+        <div class="container">
+          <h2 data-i18n="partnerTitle">Партнёр агенттиктер үчүн кабинет</h2>
+          <div class="grid grid-3">
+            <article class="card">
+              <h3 data-i18n="partner1Title">Катталуу жана верификация</h3>
+              <p data-i18n="partner1Text">Чет элдик агенттик катталып, документтерин жүктөйт.</p>
+            </article>
+            <article class="card">
+              <h3 data-i18n="partner2Title">Комиссия отчёту</h3>
+              <p data-i18n="partner2Text">Ар брондоо боюнча автоматтык комиссия жана төлөм тарыхы.</p>
+            </article>
+            <article class="card">
+              <h3 data-i18n="partner3Title">Өз турларын башкаруу</h3>
+              <p data-i18n="partner3Text">Пакет, баа жана жеткиликтүүлүктү реал-тайм жаңыртуу.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 KyrgyzTours • WordPress + Elementor Pro ready structure</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
